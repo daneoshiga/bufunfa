@@ -1,0 +1,925 @@
+[
+{
+    "pk": 1, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "permission", 
+        "name": "permission", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 2, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "group", 
+        "name": "group", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 3, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "user", 
+        "name": "user", 
+        "app_label": "auth"
+    }
+},
+{
+    "pk": 4, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "contenttype", 
+        "name": "content type", 
+        "app_label": "contenttypes"
+    }
+},
+{
+    "pk": 5, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "session", 
+        "name": "session", 
+        "app_label": "sessions"
+    }
+},
+{
+    "pk": 6, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "site", 
+        "name": "site", 
+        "app_label": "sites"
+    }
+},
+{
+    "pk": 7, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "logentry", 
+        "name": "log entry", 
+        "app_label": "admin"
+    }
+},
+{
+    "pk": 8, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "migrationhistory", 
+        "name": "migration history", 
+        "app_label": "south"
+    }
+},
+{
+    "pk": 9, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "accounttype", 
+        "name": "account type", 
+        "app_label": "accounts"
+    }
+},
+{
+    "pk": 10, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "account", 
+        "name": "account", 
+        "app_label": "accounts"
+    }
+},
+{
+    "pk": 11, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "place", 
+        "name": "place", 
+        "app_label": "places"
+    }
+},
+{
+    "pk": 12, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "itemstype", 
+        "name": "items type", 
+        "app_label": "items"
+    }
+},
+{
+    "pk": 13, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "item", 
+        "name": "item", 
+        "app_label": "items"
+    }
+},
+{
+    "pk": 14, 
+    "model": "contenttypes.contenttype", 
+    "fields": {
+        "model": "purchase", 
+        "name": "purchase", 
+        "app_label": "purchase"
+    }
+},
+{
+    "pk": "me856muuqmn04wia0i3y4o0j8zobyu74", 
+    "model": "sessions.session", 
+    "fields": {
+        "expire_date": "2013-06-13T19:14:34.851Z", 
+        "session_data": "ZjNmZmEwYzY2NWRhNjcwYTM5MWIyZTg1ZGEwNWI3ZDkzNzY3ZTY2ZjqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQRLAXUu"
+    }
+},
+{
+    "pk": 1, 
+    "model": "sites.site", 
+    "fields": {
+        "domain": "example.com", 
+        "name": "example.com"
+    }
+},
+{
+    "pk": 1, 
+    "model": "accounts.accounttype", 
+    "fields": {
+        "name": "Cart\u00e3o de Cr\u00e9dito", 
+        "description": "Cart\u00e3o de Cr\u00e9dito"
+    }
+},
+{
+    "pk": 2, 
+    "model": "accounts.accounttype", 
+    "fields": {
+        "name": "Despesa", 
+        "description": "Contas do tipo despesa"
+    }
+},
+{
+    "pk": 1, 
+    "model": "accounts.account", 
+    "fields": {
+        "type": 1, 
+        "name": "Visa", 
+        "parent": null, 
+        "description": "Cart\u00e3o de Cr\u00e9dito Visa"
+    }
+},
+{
+    "pk": 2, 
+    "model": "accounts.account", 
+    "fields": {
+        "type": 2, 
+        "name": "Frutas", 
+        "parent": 3, 
+        "description": "Todos os tipos de frutas"
+    }
+},
+{
+    "pk": 3, 
+    "model": "accounts.account", 
+    "fields": {
+        "type": 2, 
+        "name": "Hortifrutti", 
+        "parent": null, 
+        "description": "\u00c1rea geral de despesas"
+    }
+},
+{
+    "pk": 4, 
+    "model": "accounts.account", 
+    "fields": {
+        "type": 2, 
+        "name": "Padaria", 
+        "parent": null, 
+        "description": "Produtos relacionados com a parte de padaria"
+    }
+},
+{
+    "pk": 5, 
+    "model": "accounts.account", 
+    "fields": {
+        "type": 2, 
+        "name": "Junk Food", 
+        "parent": null, 
+        "description": "Todos os tipos de Junk Food"
+    }
+},
+{
+    "pk": 1, 
+    "model": "places.place", 
+    "fields": {
+        "name": "Varej\u00e3o da Fartura", 
+        "location": "Av. Jos\u00e9 Pereira Lopes, 1420"
+    }
+},
+{
+    "pk": 1, 
+    "model": "items.itemstype", 
+    "fields": {
+        "name": "Banana", 
+        "description": "Todos os tipos de Bananas"
+    }
+},
+{
+    "pk": 2, 
+    "model": "items.itemstype", 
+    "fields": {
+        "name": "P\u00e3o de Forma", 
+        "description": "Todos os tipos de P\u00e3o de FOrma"
+    }
+},
+{
+    "pk": 3, 
+    "model": "items.itemstype", 
+    "fields": {
+        "name": "Lamen", 
+        "description": "Miojos e afins"
+    }
+},
+{
+    "pk": 1, 
+    "model": "items.item", 
+    "fields": {
+        "purchase": 1, 
+        "account": 3, 
+        "name": "Banana Nanica", 
+        "unit_price": "1.99", 
+        "total": "1.25", 
+        "type": 1, 
+        "unit": "kg", 
+        "quantity": "0.63"
+    }
+},
+{
+    "pk": 2, 
+    "model": "items.item", 
+    "fields": {
+        "purchase": 1, 
+        "account": 4, 
+        "name": "P\u00e3o de forma Tradicional Wick Bold", 
+        "unit_price": "3.99", 
+        "total": "3.99", 
+        "type": 2, 
+        "unit": "un", 
+        "quantity": "1"
+    }
+},
+{
+    "pk": 3, 
+    "model": "items.item", 
+    "fields": {
+        "purchase": 1, 
+        "account": 5, 
+        "name": "Lamen Hot Calabresa Panco", 
+        "unit_price": "1.1", 
+        "total": "1.1", 
+        "type": 3, 
+        "unit": "un", 
+        "quantity": "1"
+    }
+},
+{
+    "pk": 4, 
+    "model": "items.item", 
+    "fields": {
+        "purchase": 1, 
+        "account": 5, 
+        "name": "Lamen Renata", 
+        "unit_price": "0.89", 
+        "total": "2.67", 
+        "type": 3, 
+        "unit": "un", 
+        "quantity": "3"
+    }
+},
+{
+    "pk": 1, 
+    "model": "purchase.purchase", 
+    "fields": {
+        "account": 1, 
+        "place": 1, 
+        "modified": "2013-05-30T19:40:40.733Z", 
+        "created": "2013-05-30T19:40:40.668Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_permission", 
+        "name": "Can add permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_permission", 
+        "name": "Can change permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_permission", 
+        "name": "Can delete permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_group", 
+        "name": "Can add group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_group", 
+        "name": "Can change group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_group", 
+        "name": "Can delete group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_user", 
+        "name": "Can add user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_user", 
+        "name": "Can change user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_user", 
+        "name": "Can delete user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_contenttype", 
+        "name": "Can add content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_contenttype", 
+        "name": "Can change content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_contenttype", 
+        "name": "Can delete content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_session", 
+        "name": "Can add session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_session", 
+        "name": "Can change session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_session", 
+        "name": "Can delete session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_site", 
+        "name": "Can add site", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_site", 
+        "name": "Can change site", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_site", 
+        "name": "Can delete site", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_logentry", 
+        "name": "Can add log entry", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_logentry", 
+        "name": "Can change log entry", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_logentry", 
+        "name": "Can delete log entry", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_migrationhistory", 
+        "name": "Can add migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_migrationhistory", 
+        "name": "Can change migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_migrationhistory", 
+        "name": "Can delete migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_accounttype", 
+        "name": "Can add account type", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_accounttype", 
+        "name": "Can change account type", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_accounttype", 
+        "name": "Can delete account type", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_account", 
+        "name": "Can add account", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_account", 
+        "name": "Can change account", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_account", 
+        "name": "Can delete account", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_place", 
+        "name": "Can add place", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_place", 
+        "name": "Can change place", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_place", 
+        "name": "Can delete place", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_itemstype", 
+        "name": "Can add items type", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_itemstype", 
+        "name": "Can change items type", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_itemstype", 
+        "name": "Can delete items type", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_item", 
+        "name": "Can add item", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_item", 
+        "name": "Can change item", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_item", 
+        "name": "Can delete item", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_purchase", 
+        "name": "Can add purchase", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_purchase", 
+        "name": "Can change purchase", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_purchase", 
+        "name": "Can delete purchase", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "dshiga", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2013-05-30T19:14:34.520Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$7XrfvcEB7pdE$t+Sfn/s3hSeba6WFQODfhUTf8FZKVibJxQ0y2e6aEO4=", 
+        "email": "daniloshiga@gmail.com", 
+        "date_joined": "2013-05-30T19:14:09.238Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T19:15:12.938Z", 
+        "object_repr": "Varej\u00e3o da Fartura", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 2, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T19:15:34.650Z", 
+        "object_repr": "Cart\u00e3o de Cr\u00e9dito", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 9
+    }
+},
+{
+    "pk": 3, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T19:15:43.688Z", 
+        "object_repr": "Account object", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 4, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T19:40:40.753Z", 
+        "object_repr": "2013-05-30 19:40:40.668025+00:00, Varej\u00e3o da Fartura, Visa", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 14
+    }
+},
+{
+    "pk": 5, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:01:24.021Z", 
+        "object_repr": "Despesa", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 9
+    }
+},
+{
+    "pk": 6, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:01:26.536Z", 
+        "object_repr": "Frutas", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 7, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:02:08.622Z", 
+        "object_repr": "Hortifrutti", 
+        "object_id": "3", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 8, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2013-05-30T21:02:34.087Z", 
+        "object_repr": "Frutas", 
+        "object_id": "2", 
+        "change_message": "Changed parent.", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 9, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:02:59.900Z", 
+        "object_repr": "Banana", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 12
+    }
+},
+{
+    "pk": 10, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:03:18.219Z", 
+        "object_repr": "Banana, Banana Nanica, 1.990000 x 0.630000 kg = 1.250000", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 13
+    }
+},
+{
+    "pk": 11, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:06:50.618Z", 
+        "object_repr": "Padaria", 
+        "object_id": "4", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 12, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:07:21.435Z", 
+        "object_repr": "P\u00e3o de Forma", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 12
+    }
+},
+{
+    "pk": 13, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:12:27.667Z", 
+        "object_repr": "P\u00e3o de forma Tradicional Wick Bold, 3.990000 x 1.000000 un = 3.990000", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 13
+    }
+},
+{
+    "pk": 14, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:13:44.634Z", 
+        "object_repr": "Junk Food", 
+        "object_id": "5", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 10
+    }
+},
+{
+    "pk": 15, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:14:12.212Z", 
+        "object_repr": "Lamen", 
+        "object_id": "3", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 12
+    }
+},
+{
+    "pk": 16, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:14:22.347Z", 
+        "object_repr": "Lamen Hot Calabresa Panco, 1.10 x 1.000 un = 1.10", 
+        "object_id": "3", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 13
+    }
+},
+{
+    "pk": 17, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2013-05-30T21:15:12.432Z", 
+        "object_repr": "Lamen Renata, 0.89 x 3.000 un = 2.67", 
+        "object_id": "4", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 13
+    }
+}
+]
