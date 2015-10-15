@@ -3,6 +3,7 @@ from django.db import models
 
 from model_utils.models import TimeStampedModel
 
+
 class Purchase(TimeStampedModel):
     '''
     Sum of value from all items of Purchase
