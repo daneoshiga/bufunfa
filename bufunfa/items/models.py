@@ -28,4 +28,3 @@ class Item(models.Model):
                                               self.unit_price, self.quantity,
                                               self.unit, self.total)
 
-

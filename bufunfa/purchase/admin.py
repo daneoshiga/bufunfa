@@ -3,6 +3,7 @@ from django.contrib import admin
 
 from .models import Purchase
 
+
 class PurchaseAdmin(admin.ModelAdmin):
     pass
 
